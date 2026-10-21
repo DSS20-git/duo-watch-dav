@@ -1,0 +1,45 @@
+name: iPhone Duo watcher
+
+on:
+  schedule:
+    - cron: "7 * * * *"      # every hour, at :07 (UTC; GitHub may run a few minutes late)
+  workflow_dispatch:          # lets you press "Run workflow" to test it
+
+permissions:
+  contents: write             # needed to save state.json between runs
+
+concurrency:
+  group: duo-watch
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Check Apple
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          ZIPS: "02130,02115"
+          PRODUCT_URL: "https://www.apple.com/shop/buy-iphone/iphone-duo/7.6-inch-display-1tb-night-sky-unlocked"
+          PART_NUMBER: ${{ vars.PART_NUMBER }}
+        run: python check_duo.py
+
+      - name: Save state
+        run: |
+          git config user.name "duo-watch-bot"
+          git config user.email "duo-watch-bot@users.noreply.github.com"
+          git add state.json
+          git commit -m "update state" || echo "nothing to commit"
+          git push
