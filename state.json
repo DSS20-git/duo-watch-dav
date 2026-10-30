@@ -34,12 +34,13 @@
       "or $83.29/mo.",
       "or $91.62/mo.",
       "term also available",
-      "\u0192/1.48, \u0192/1.8, \u0192/2.8, \u0192/4.0 variable aperture options (Fusion Main)"
+      "\u0192/1.48, \u0192/1.8, \u0192/2.8, \u0192/4.0 variable aperture options (Fusion Main)",
+      "\u203b Lease from Lease from$75.40/mo."
     ]
   },
   "part": "MK1L4LL/A",
-  "last_change_check": "2026-10-30T03:43:58+00:00",
-  "last_run": "2026-10-30T03:43:58+00:00",
+  "last_change_check": "2026-10-30T04:44:09+00:00",
+  "last_run": "2026-10-30T04:44:09+00:00",
   "last_errors": [
     "ZIP 02130: Apple returned HTTP 541",
     "ZIP 02115: Apple returned HTTP 541"
