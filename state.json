@@ -3,7 +3,6 @@
   "last": {
     "zips": {},
     "page_lines": [
-      "$19.99/mo.",
       "$75.40/mo.",
       "5.4-inch Super Retina XDR outer display",
       "6.1\u2033",
@@ -12,16 +11,18 @@
       "6.9\u2033 or 6.3\u2033",
       "7.6-inch Super Retina XDR folding display with nano\u2011texture",
       "7.6\u201d",
-      "Add more products anytime for $5.99/mo.",
       "Apple Leadership",
       "Express Replacement Service \u2014 we\u2019ll ship you a replacement so you don\u2019t have to wait for a repair",
+      "Family $49.99/mo.",
       "Free shipping",
       "From $72.19/mo.",
+      "Individual $19.99/mo.",
       "Keep all your selections by saving this device to Your Saves, then come back anytime and pick up right where you left off.",
       "Lease from $57.99/mo.",
       "Lease from $63.80/mo.",
       "Lease from $75.40/mo.",
       "Lease from $92.81/mo.",
+      "Monthly $19.99/mo.",
       "No 5.4-inch Super Retina XDR outer display",
       "No Smart Take",
       "No Smart focus tracking",
@@ -38,8 +39,8 @@
     ]
   },
   "part": "MK1L4LL/A",
-  "last_change_check": "2026-11-19T11:28:57+00:00",
-  "last_run": "2026-11-19T11:28:57+00:00",
+  "last_change_check": "2026-11-19T20:24:00+00:00",
+  "last_run": "2026-11-19T20:24:00+00:00",
   "last_errors": [
     "ZIP 02130: Apple returned HTTP 541",
     "ZIP 02115: Apple returned HTTP 541"
